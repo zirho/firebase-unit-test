@@ -18,7 +18,6 @@
   "author": "Joshua Youngjae Ji",
   "license": "MIT",
   "dependencies": {
-    "babel-polyfill": "^6.20.0",
     "firebase": "^3.6.4",
     "firebase-admin": "^4.0.4",
     "mocha": "^3.2.0",
@@ -27,7 +26,6 @@
   "devDependencies": {
     "babel-core": "^6.21.0",
     "babel-preset-es2015": "^6.18.0",
-    "babel-preset-stage-0": "^6.16.0",
     "watch-run": "^1.2.4"
   }
 }
