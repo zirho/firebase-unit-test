@@ -106,7 +106,7 @@ yarn test
 
 #### Run tests as an authenticated user
 
-Pick a UID from firebase console > Authenticateion > USERS 
+Pick a UID from firebase console > Authentication > USERS 
 
 Put the UID to the test
 
