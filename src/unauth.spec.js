@@ -2,7 +2,7 @@ import should from 'should'
 import { getFirebase } from './firebase'
 
 describe('Unauthenticated firebase', () => {
-  let fb;
+  let fb
 
   before(() => {
     fb = getFirebase(undefined, 'customName')
@@ -13,10 +13,10 @@ describe('Unauthenticated firebase', () => {
       .then((firebase) => {
         firebase.ref('users/randomuid').once('value')
           .then((sn) => {
-            done(new Error('should not fetch user'));
+            done(new Error('should not fetch user'))
           })
           .catch((error) => {
-            done();
+            done()
           })
       })
   })

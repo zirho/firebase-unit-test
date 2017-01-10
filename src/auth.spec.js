@@ -2,8 +2,8 @@ import should from 'should'
 import { authWithUid } from './firebase.admin'
 
 describe('Authenticated firebase', () => {
-  let authedFirebase;
-  const UID = 'vl7GjxgIRre1sD0fNISAdqiDPFw1';
+  let authedFirebase
+  const UID = 'vl7GjxgIRre1sD0fNISAdqiDPFw1'
 
   before(() => {
     authedFirebase = authWithUid(UID)
@@ -15,11 +15,11 @@ describe('Authenticated firebase', () => {
         const database = firebase.database()
         database.ref(`user`).once('value')
           .then((sn) => {
-            should.strictEqual(sn.val(), 'joshua');
-            done();
+            should.strictEqual(sn.val(), 'joshua')
+            done()
           })
           .catch((error) => {
-            done(error);
+            done(error)
           })
       })
   })

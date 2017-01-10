@@ -115,8 +115,8 @@ vi src/auth.test.js
 ```
 ```
 describe('Authenticated firebase', () => {
-  let authedFirebase;
-  const UID = 'vl7GjxgIRre1sD0ftesttesttesttest';
+  let authedFirebase
+  const UID = 'vl7GjxgIRre1sD0ftesttesttesttest'
 ...
 ...
 ```
