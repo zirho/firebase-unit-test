@@ -8,5 +8,5 @@ export default firebase
 export const getFirebase =
   (customConfig = config, customName = '[default]') => {
     const cFirebase = firebase.initializeApp(customConfig, customName)
-    return Promise.resolve(cFirebase.database())
+    return Promise.resolve(cFirebase)
   }
